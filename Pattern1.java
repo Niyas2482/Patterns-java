@@ -1,16 +1,20 @@
 public class Pattern1 {
-
     public static void main(String[] args) {
-        int n=5;
-        for(int i=1;i<n*2;i++)
+
+        int n=6;
+
+        for(int row=1;row<=5;row++)
         {
-            int totalcols=i>n?2*n-i:i;
-            for(int j=1;j<=totalcols;j++)
+            for(int col=1;col<=n-row;col++)
             {
-                System.out.print("*");
+                System.out.print("  *   ");
 
             }
-            System.out.println();
-        }
+            {
+                System.out.println();
+            }
     }
 }
+}
+
+
